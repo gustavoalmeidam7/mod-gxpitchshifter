@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM debian:trixie-slim
 
 RUN apt update && \
     apt install --no-install-recommends -y \
