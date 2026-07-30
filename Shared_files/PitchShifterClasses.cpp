@@ -275,10 +275,14 @@ void PSSinthesis::Sinthesis(double s)
 	
 }
 
-int nBuffersSW(uint32_t n_samples, int c64, int c128, int c256, int c_default)
+int nBuffersSW(uint32_t n_samples, int c16, int c32, int c64, int c128, int c256, int c_default)
 {
 	switch(n_samples)
 	{
+		case 16:
+			return c16;
+		case 32:
+			return c32;
 		case 64:
 			return c64;
 		case 128:

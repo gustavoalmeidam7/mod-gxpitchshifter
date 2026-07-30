@@ -8,11 +8,11 @@
 /**********************************************************************************************************************************************************/
 
 #define PLUGIN_URI "http://moddevices.com/plugins/mod-devel/GxHarmonizer2"
-#define FIDELITY0 4,2,1,1
-#define FIDELITY1 8,4,2,1
-#define FIDELITY2 12,6,3,2
-#define FIDELITY3 16,8,4,2
-#define FIDELITYPD 8,4,2,1
+#define FIDELITY0 24,16,4,2,1,1
+#define FIDELITY1 24,16,8,4,2,1
+#define FIDELITY2 24,16,12,6,3,2
+#define FIDELITY3 24,16,16,8,4,2
+#define FIDELITYPD 24,16,8,4,2,1
 enum {IN, OUT_CLEAN, OUT_1, OUT_2, TONE, SCALE, INTERVAL_1, INTERVAL_2, MODE, LOWNOTE, GAIN_CLEAN, GAIN_1, GAIN_2, FIDELITY, PLUGIN_PORT_COUNT};
 
 /**********************************************************************************************************************************************************/
@@ -141,7 +141,7 @@ LV2_Handle Harmonizer2::instantiate(const LV2_Descriptor* descriptor, double sam
     std::string wisdomFile = bundle_path;
     wisdomFile += "/harmonizer.wisdom";
     const uint32_t n_samples = 256; // Fix the buffersize for Guitarix //GetBufferSize(features);
-    Harmonizer2 *plugin = new Harmonizer2(n_samples, nBuffersSW(n_samples,8,4,2,1), nBuffersSW(n_samples,8,4,2,1), samplerate, wisdomFile);
+    Harmonizer2 *plugin = new Harmonizer2(n_samples, nBuffersSW(n_samples,FIDELITY1), nBuffersSW(n_samples,FIDELITY1), samplerate, wisdomFile);
     return (LV2_Handle)plugin;
 }
 

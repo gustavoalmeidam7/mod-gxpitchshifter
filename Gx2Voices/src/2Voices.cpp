@@ -6,10 +6,10 @@
 /**********************************************************************************************************************************************************/
 
 #define PLUGIN_URI "http://moddevices.com/plugins/mod-devel/Gx2Voices"
-#define FIDELITY0 6,3,2,1
-#define FIDELITY1 12,6,3,2
-#define FIDELITY2 16,8,4,2
-#define FIDELITY3 20,10,5,3
+#define FIDELITY0 24,16,6,3,2,1
+#define FIDELITY1 24,16,12,6,3,2
+#define FIDELITY2 24,16,16,8,4,2
+#define FIDELITY3 24,16,20,10,5,3
 enum {IN, OUT_1, OUT_2, STEP_1, STEP_2, GAIN_1, GAIN_2, FIDELITY, PLUGIN_PORT_COUNT};
 
 /**********************************************************************************************************************************************************/

@@ -6,10 +6,10 @@
 /**********************************************************************************************************************************************************/
 
 #define PLUGIN_URI "http://moddevices.com/plugins/mod-devel/GxSuperCapo"
-#define FIDELITY0 8,4,2,1
-#define FIDELITY1 16,8,4,2
-#define FIDELITY2 24,12,6,3
-#define FIDELITY3 32,16,8,4
+#define FIDELITY0 24,16,8,4,2,1
+#define FIDELITY1 24,16,16,8,4,2
+#define FIDELITY2 24,16,24,12,6,3
+#define FIDELITY3 24,16,32,16,8,4
 enum {IN, OUT, STEP, GAIN, FIDELITY, PLUGIN_PORT_COUNT};
 
 /**********************************************************************************************************************************************************/
