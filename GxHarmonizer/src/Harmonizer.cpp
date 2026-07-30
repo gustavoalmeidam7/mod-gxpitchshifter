@@ -8,11 +8,11 @@
 /**********************************************************************************************************************************************************/
 
 #define PLUGIN_URI "http://moddevices.com/plugins/mod-devel/GxHarmonizer"
-#define FIDELITY0 4,2,1,1
-#define FIDELITY1 8,4,2,1
-#define FIDELITY2 12,6,3,2
-#define FIDELITY3 16,8,4,2
-#define FIDELITYPD 8,4,2,1
+#define FIDELITY0 24,16,4,2,1,1
+#define FIDELITY1 24,16,8,4,2,1
+#define FIDELITY2 24,16,12,6,3,2
+#define FIDELITY3 24,16,16,8,4,2
+#define FIDELITYPD 24,16,8,4,2,1
 enum {IN, OUT_1, OUT_2, TONE, SCALE, INTERVAL, MODE, LOWNOTE, GAIN_1, GAIN_2, FIDELITY, PLUGIN_PORT_COUNT};
 
 /**********************************************************************************************************************************************************/

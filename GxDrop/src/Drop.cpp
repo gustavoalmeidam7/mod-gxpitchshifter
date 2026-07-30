@@ -6,10 +6,10 @@
 /**********************************************************************************************************************************************************/
 
 #define PLUGIN_URI "http://moddevices.com/plugins/mod-devel/GxDrop"
-#define FIDELITY0 4,2,1,1
-#define FIDELITY1 8,4,2,1
-#define FIDELITY2 16,8,4,2
-#define FIDELITY3 24,12,6,3
+#define FIDELITY0 24,16,4,2,1,1
+#define FIDELITY1 24,16,8,4,2,1
+#define FIDELITY2 24,16,16,8,4,2
+#define FIDELITY3 24,16,24,12,6,3
 enum {IN, OUT, STEP, GAIN, FIDELITY, PLUGIN_PORT_COUNT};
 
 /**********************************************************************************************************************************************************/
