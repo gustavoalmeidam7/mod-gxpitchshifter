@@ -11,6 +11,8 @@ following values of Frames/Period: 64, 128, 256, 512
 
 You need a PC with at least 2Gb of ram to compile the source code.
 
+## Option 1:
+
 Dependencies:
 
 	- Armadillo
@@ -24,6 +26,16 @@ On a Debian or Ubuntu system you can use this command to install all dependencie
 Installation:
 
 	make
+	sudo make install
+
+## Option 2 (using docker):
+
+build the project:
+
+	docker compose up --build
+
+install on host machine:
+
 	sudo make install
 
 (Be patient, may take more than 20 minutes to compile)
